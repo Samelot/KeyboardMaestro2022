@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>386</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>sudo pip3 install --upgrade youtube-dl</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>577488894.00722301</real>
+				<key>ModificationDate</key>
+				<real>577489246.93445206</real>
+				<key>Name</key>
+				<string>Paste youtube-dl Update</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>ytdlup</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>75B4BA65-E45C-4836-8700-C262D54FD54A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

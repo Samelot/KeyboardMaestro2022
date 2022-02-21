@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>349</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Hello,
+
+I’m writing to express my interest in learning more about teaching at ???
+
+I’m a hard-working artist/programmer/teacher living in Brooklyn, NY. I have a strong teaching background, have taught a variety of ages, and have experienced many different classroom environments. This year, I’ve been very involved in teaching at Motessori / Democratic schools (ages 3 - 5). The schools that I work closely with are located in the Greenpoint area and I am very dedicated to providing for the staff, parents, and students. I’ve built great relationships with the Greenpoint community and I would love to stay in that area, but I’m also willing to teach at other schools if I find that they are a good fit for me.
+
+My energy is very open and friendly, and I am an extremely patient teacher. When outdoors, I am highly active with kids, and encourage all kinds of creative activities for them to make use of their minds and bodies. I get great satisfaction in helping kids that may have difficulties socializing with their peers. Communicating with kids and helping them build a strong and positive outlook on life is very important to me. I believe that I have a very unique approach to being an educator.
+
+I’m eager to find a great group of people to join in improving the education for younger students. With my free time I code and use various softwares, so I am very aware of the strong bond that many kids have with technology and their parent’s phones. My personal insight into our computer-centric world will make me an excellent mentor for any student fascinated by technology.
+
+I'm attaching my resume to this email. I’d love a chance to talk more.
+
+Best regards,
+Sam Englander
+
+sizeoverload@gmail.com
+610-420-5737
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>559933736.41359997</real>
+				<key>ModificationDate</key>
+				<real>559933998.548805</real>
+				<key>Name</key>
+				<string>Paste edu3</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>edu3</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>58C8C675-ABE9-48AB-AC6C-0EAE95DF9B9C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

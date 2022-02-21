@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>575130488.43859696</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>614</integer>
+						<key>AllWindows</key>
+						<true/>
+						<key>AlreadyActivatedActionType</key>
+						<string>Normal</string>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.audirvana.Audirvana-Plus</string>
+							<key>Name</key>
+							<string>Audirvana Plus</string>
+							<key>NewFile</key>
+							<string>/Applications/Audirvana Plus.app</string>
+						</dict>
+						<key>MacroActionType</key>
+						<string>ActivateApplication</string>
+						<key>ReopenWindows</key>
+						<false/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>615</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>View</string>
+							<string>Show Artists List</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.audirvana.Audirvana-Plus</string>
+							<key>Name</key>
+							<string>Audirvana Plus</string>
+							<key>NewFile</key>
+							<string>/Applications/Audirvana Plus.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>575130651.91202605</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Audirvana Plus.app</string>
+				<key>ModificationDate</key>
+				<real>575131053.15201795</real>
+				<key>Name</key>
+				<string>Artist Search</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>A18A57DA-6331-4C08-808E-089BD3520FB0</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ SamAudirvana</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.audirvana.Audirvana-Plus</string>
+					<key>Name</key>
+					<string>Audirvana Plus</string>
+					<key>NewFile</key>
+					<string>/Applications/Audirvana Plus.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>C4FA635A-97EA-4030-9FA5-A1CF27C198DF</string>
+		<key>UID</key>
+		<string>DF072C39-AD44-4F15-B032-0B0E700C157A</string>
+	</dict>
+</array>
+</plist>

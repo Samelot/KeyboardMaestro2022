@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>584579429.8441</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>80</integer>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>https://soundcloud.com/matteiraldi/guest-mix-samelot
+
+https://soundcloud.com/matteiraldi/matt-eiraldi-samelot
+
+https://soundcloud.com/samelot/sam-matt-winter-mix-2018
+
+https://soundcloud.com/samelot/tdj3-fall2015</string>
+						<key>Variable</key>
+						<string>Mixes</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>584580844.97232795</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>584581174.55653703</real>
+				<key>Name</key>
+				<string>%OldMixes% ???</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>7A806A4F-EC1E-459C-9989-E1E345495392</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ GigPromotion</string>
+		<key>ToggleMacroUID</key>
+		<string>E7124A0D-E4B3-4D87-BAB4-65F56F6F26A7</string>
+		<key>UID</key>
+		<string>4F1375E2-4778-4745-90FC-312FADF66E35</string>
+	</dict>
+</array>
+</plist>

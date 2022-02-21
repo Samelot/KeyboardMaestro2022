@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>666378490.07102001</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>452</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.brave.Browser</string>
+										<key>Name</key>
+										<string>Brave Browser</string>
+										<key>NewFile</key>
+										<string>/Applications/Brave Browser.app</string>
+									</dict>
+									<key>ApplicationConditionType</key>
+									<string>Active</string>
+									<key>ConditionType</key>
+									<string>Application</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>453</integer>
+								<key>DisplayKind</key>
+								<string>Clipboard</string>
+								<key>HonourFailureSettings</key>
+								<true/>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string></string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string>-- http://veritrope.com/code/export-all-chrome-tabs-to-a-text-file/
+property report_Title : "URL List from Chrome Tabs"
+
+set url_list to {}
+set the date_stamp to ((the current date) as string)
+set NoteTitle to report_Title &amp; " | " &amp; the date_stamp
+
+tell application "Brave Browser"
+	activate
+	set chromeWindow to window 1
+	repeat with w in chromeWindow
+		try
+			repeat with t in (tabs of w)
+				set TabTitle to (title of t)
+				set TabURL to (URL of t)
+				set TabInfo to ("" &amp; TabTitle &amp; return &amp; TabURL &amp; return &amp; return)
+				copy TabInfo to the end of url_list
+			end repeat
+		end try
+	end repeat
+end tell
+
+set old_delim to AppleScript's text item delimiters
+set AppleScript's text item delimiters to return
+set url_list to (NoteTitle &amp; return &amp; return &amp; return &amp; url_list) as text
+set AppleScript's text item delimiters to old_delim
+
+get url_list
+
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>503409708.81211001</real>
+				<key>ModificationDate</key>
+				<real>641918044.51419604</real>
+				<key>Name</key>
+				<string>Copy Tab URLs</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>11</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6912</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>316DFD40-B9D7-4B60-987A-5BF4BD975936</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros [!]</string>
+		<key>ToggleMacroUID</key>
+		<string>A16270F5-4CC9-457B-8A35-C96E2EA1C702</string>
+		<key>UID</key>
+		<string>8AA43C87-AD18-4FA7-9782-F8AE7804C601</string>
+	</dict>
+</array>
+</plist>

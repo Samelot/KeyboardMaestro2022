@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>642691294.02623105</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>Toggle</string>
+						<key>ActionUID</key>
+						<integer>580</integer>
+						<key>MacroActionType</key>
+						<string>SetMacroEnable</string>
+						<key>MacroUID</key>
+						<string>2811DA36-25AF-4095-95C2-81832A900911</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>651939737.50425303</real>
+				<key>ModificationDate</key>
+				<real>652109223.32629502</real>
+				<key>Name</key>
+				<string>F3 Cycle - Toggle</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>AB5FF5E5-71BE-4764-8978-1B2ACD90FA61</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>SamRekordbox | Shortcuts</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.pioneerdj.rekordboxdj</string>
+					<key>Name</key>
+					<string>rekordbox</string>
+					<key>NewFile</key>
+					<string>/Applications/rekordbox 6/rekordbox.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>564EACA5-C3B1-4C85-8CF2-0BF668095CC7</string>
+		<key>UID</key>
+		<string>C7650E97-ED03-49AB-BF36-22E3911ECC0B</string>
+	</dict>
+</array>
+</plist>

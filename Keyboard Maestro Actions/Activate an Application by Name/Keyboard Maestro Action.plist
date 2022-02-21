@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Rob Trew @Complexpoint</string>
+	<key>Help</key>
+	<string>Activate a specific application, using its exact name string</string>
+	<key>Icon</key>
+	<string>Icon.png</string>
+	<key>Name</key>
+	<string>Activate an Application by Name</string>
+	<key>Parameters</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Finder</string>
+			<key>Label</key>
+			<string>Activate</string>
+			<key>Type</key>
+			<string>TokenString</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>1</string>
+			<key>Label</key>
+			<string>All windows</string>
+			<key>Type</key>
+			<string>Checkbox</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>0</string>
+			<key>Label</key>
+			<string>Reopen initial windows</string>
+			<key>Type</key>
+			<string>Checkbox</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>leave it at the front</string>
+			<key>Label</key>
+			<string>If already at the front</string>
+			<key>Menu</key>
+			<string>leave it at the front|switch to last application|hide the application|quit the application</string>
+			<key>Type</key>
+			<string>PopupMenu</string>
+		</dict>
+	</array>
+	<key>Results</key>
+	<string>None|Briefly|Clipboard|Variable|Window</string>
+	<key>Script</key>
+	<string>activatedApp.sh</string>
+	<key>Title</key>
+	<string>Activate %Param%Activate%</string>
+</dict>
+</plist>

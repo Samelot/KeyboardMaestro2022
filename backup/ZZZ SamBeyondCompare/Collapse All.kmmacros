@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>548430269.59236705</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>650</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Menu</string>
+									<key>MenuConditionSelectionType</key>
+									<string>Is</string>
+									<key>MenuConditionType</key>
+									<string>IsEnabled</string>
+									<key>MenuModifiers</key>
+									<integer>256</integer>
+									<key>MenuShortcut</key>
+									<string>C</string>
+									<key>MenuTitle</key>
+									<string>Collapse All</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>653</integer>
+								<key>MacroActionType</key>
+								<string>Notification</string>
+								<key>SoundName</key>
+								<string></string>
+								<key>Subtitle</key>
+								<string></string>
+								<key>Text</key>
+								<string>Collapse unavailable
+</string>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>651</integer>
+								<key>MacroActionType</key>
+								<string>SelectMenuItem</string>
+								<key>Menu</key>
+								<array>
+									<string>Edit</string>
+									<string>Collapse All</string>
+								</array>
+								<key>TargetApplication</key>
+								<dict>
+									<key>BundleIdentifier</key>
+									<string>com.ScooterSoftware.BeyondCompare</string>
+									<key>Name</key>
+									<string>Beyond Compare</string>
+								</dict>
+								<key>TargetingType</key>
+								<string>Specific</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>CancelJustThisMacro</string>
+								<key>ActionUID</key>
+								<integer>652</integer>
+								<key>MacroActionType</key>
+								<string>Cancel</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>CancelJustThisMacro</string>
+						<key>ActionUID</key>
+						<integer>654</integer>
+						<key>MacroActionType</key>
+						<string>Cancel</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>548431776.98942494</real>
+				<key>ModificationDate</key>
+				<real>548431911.15714896</real>
+				<key>Name</key>
+				<string>Collapse All</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>D4A430E0-ED3D-4FC3-B8C9-7AB9F097C048</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ SamBeyondCompare</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.ScooterSoftware.BeyondCompare</string>
+					<key>Name</key>
+					<string>Beyond Compare</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>7C100AAC-EDEC-4405-B485-7D9A25FA9455</string>
+		<key>UID</key>
+		<string>EAA5F680-6F65-490E-AD19-96923042DCE1</string>
+	</dict>
+</array>
+</plist>

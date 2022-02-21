@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>584579429.8441</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>77</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Had a great time at your party last weekend. I'd be very interested in DJing there in the future. I play techno and I frequently mix in other electronic genres. Occasionally I collab with another DJ where our sets feature more foreign genres with experimental elements.
+
+Below are some mixes - I go by samelot :)
+
+%Variable%Mixes%
+
+I'd be happy to do some djing at a future event. Thanks, and nice meeting you the other night!
+
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>584578730.16804397</real>
+				<key>ModificationDate</key>
+				<real>584580792.27046096</real>
+				<key>Name</key>
+				<string>Paste tdjpersonal</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>tdjpersonal</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0577C736-74C7-4F10-99F6-A8A8660BF653</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ GigPromotion</string>
+		<key>ToggleMacroUID</key>
+		<string>E7124A0D-E4B3-4D87-BAB4-65F56F6F26A7</string>
+		<key>UID</key>
+		<string>4F1375E2-4778-4745-90FC-312FADF66E35</string>
+	</dict>
+</array>
+</plist>

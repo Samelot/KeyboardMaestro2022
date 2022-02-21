@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>584579429.8441</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>81</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Hello. I’m a local dj and proud director of secret dj collective located in Brooklyn. Please help us find a home to put on a bi-weekly or monthly show. We play all sorts of fun-cute-weird electronic music for mature techno crowds.
+
+Please enjoy our mixes are here:
+
+%Variable%Mixes%
+
+We would love an opportunity to play and mix music at the Lot.
+
+Thanks for your time!
+
+Sincerely,
+Sam
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>584579039.39263594</real>
+				<key>ModificationDate</key>
+				<real>584580771.02472794</real>
+				<key>Name</key>
+				<string>Paste tdjlot</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>tdjlot</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>05B3A443-783C-405C-84C0-7BFCFDB47F72</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ GigPromotion</string>
+		<key>ToggleMacroUID</key>
+		<string>E7124A0D-E4B3-4D87-BAB4-65F56F6F26A7</string>
+		<key>UID</key>
+		<string>4F1375E2-4778-4745-90FC-312FADF66E35</string>
+	</dict>
+</array>
+</plist>

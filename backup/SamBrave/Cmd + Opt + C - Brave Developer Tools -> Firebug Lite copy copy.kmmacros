@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>666889721.80343497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>666889806.87124205</real>
+				<key>ModificationDate</key>
+				<real>666889810.13441396</real>
+				<key>Name</key>
+				<string>Cmd + Opt + C : Brave Developer Tools -&gt; Firebug Lite copy copy</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>088720DC-84B6-4C04-9FE2-76273810A33E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>SamBrave</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.brave.Browser</string>
+					<key>Name</key>
+					<string>Brave Browser</string>
+					<key>NewFile</key>
+					<string>/Applications/Brave Browser.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>F377D3E0-AE00-4C27-81D6-0A709C847EA5</string>
+		<key>UID</key>
+		<string>9639DD67-670A-456E-89C6-D05D03E4FE04</string>
+	</dict>
+</array>
+</plist>

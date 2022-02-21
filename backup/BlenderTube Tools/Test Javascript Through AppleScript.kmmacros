@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>544635181.64273298</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>282</integer>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>alert('example');</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>WebBrowser</key>
+						<string>Google Chrome</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>631474765.65707302</real>
+				<key>ModificationDate</key>
+				<real>631475093.77378595</real>
+				<key>Name</key>
+				<string>Test Javascript Through AppleScript</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>4D0D8A5D-748C-4820-B503-B33AABB16724</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>BlenderTube Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>0038F7E4-BAFD-4BA5-80B6-A1A501C03761</string>
+		<key>UID</key>
+		<string>A210706B-1713-4311-8477-0A2E279104AA</string>
+	</dict>
+</array>
+</plist>

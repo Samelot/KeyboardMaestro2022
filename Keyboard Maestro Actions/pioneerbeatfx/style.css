@@ -1,0 +1,151 @@
+body {
+	border: 1px solid yellow;
+	font-family: Verdana, Arial, Helvetica, Geneva, Tahoma, sans-serif;
+	font-size: medium;
+	color: black;
+	margin: 5px;
+	background-color: #DEB887;
+}
+
+.beatSizeSection {
+	width: 250px;
+	height: 120px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box0 {
+	width:250px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+
+	padding: 0;
+	margin: 0;
+
+}
+.box1 {
+	width:250px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+
+	padding: 0;
+	margin: 0;
+
+}
+.box2 {
+	width:250px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+
+	padding: 0;
+	margin: 0;
+
+}
+.beatSizeItem {
+	padding-left:6px;
+	padding-right:6px;
+	margin-top: 2px;  
+
+	height: 35px;
+	line-height: 35px;  
+
+	background: tomato;
+	color: white;
+	/*font-weight: bold;*/
+	text-align: center;
+
+}
+
+.beatSizeItem:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.beatSizeItem.active {
+  background-color: #23408d;
+}
+
+.footerDiv {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footerDiv h3 {
+	text-align: center;
+	background: red;
+}
+
+.footerDiv span {
+	display: block;
+	text-align: center;
+}
+
+.btnDefault {
+	display: block;
+	border-radius: 28px;
+	font-family: Arial;
+	background: blue;
+	color: white;
+	border: solid lightblue 2px;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 20px 5px 20px;
+}
+
+.btnDefault:hover {
+	background: #fcfc3c;
+	text-decoration: none;
+	color: black;
+}
+
+.beatEffectSection {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 206px;
+	height: 134px;
+	background: url("images/djm-beatfx-effect.png");
+}
+
+.beatEffectSection input {
+	margin: auto auto;
+}
+
+.beatEffectChannelSection {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 160px;
+	height: 112px;
+	background: url("images/djm-beatfx-channel.png");
+}
+
+.beatEffectChannelSection input {
+	margin: auto auto;
+}
+
+.beatEffectLevelSection {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 100px;
+}
+
+.beatEffectLevelSection input {
+	margin: auto auto;
+}
+
+
+input:focus {
+    outline: none;
+}

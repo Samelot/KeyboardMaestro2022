@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>444</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>I’m a hard-working artist/programmer living in Brooklyn, NY with a focus in graphics, textures, and animations. I’m writing to express my interest in learning more about your company and to find out about possible opportunities/internships to work there now or in the future.
+
+Please find my cover letter and resume attached. Feel free to contact me anytime. I look forward to hearing back from you. 
+
+Kind regards,
+Sam Englander
+
+sizeoverload@gmail.com
+6104205737</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>535302362.99542803</real>
+				<key>ModificationDate</key>
+				<real>545854386.57032394</real>
+				<key>Name</key>
+				<string>Paste jobs1</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>jobs1</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>AE32ACB7-3A38-45B1-88DD-61DEAE5CEA90</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

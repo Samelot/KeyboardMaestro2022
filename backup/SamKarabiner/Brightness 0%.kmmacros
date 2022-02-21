@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>612271724.74944997</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>42</integer>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>43</integer>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SystemAction</string>
+								<key>SystemAction</key>
+								<string>DecreaseBrightness</string>
+							</dict>
+						</array>
+						<key>CountExpression</key>
+						<string>16</string>
+						<key>MacroActionType</key>
+						<string>Repeat</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>612620262.49223804</real>
+				<key>ModificationDate</key>
+				<real>612621131.07974398</real>
+				<key>Name</key>
+				<string>Brightness 0%</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>2</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4608</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>01BB1AE0-7811-4028-B7A5-3F2832F64634</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>SamKarabiner</string>
+		<key>ToggleMacroUID</key>
+		<string>B7BD45F8-9D5C-47C8-8231-6D840587E711</string>
+		<key>UID</key>
+		<string>15FDC0B8-47A5-431E-AF35-D55F6C27AFDF</string>
+	</dict>
+</array>
+</plist>

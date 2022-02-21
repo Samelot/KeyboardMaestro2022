@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>samhtmlform</title>
+
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+<style type="text/css">
+	body {
+		font-family:Verdana, Arial, Helvetica, Geneva, Tahoma, sans-serif;
+		font-size:medium;
+		color:black;
+		margin: 5px;
+		background-color: #DEB887;
+	}
+
+	table, th, td {
+		/*border-collapse: collapse;*/
+		border: 1px solid #000000;
+		background-color: #DEB887;
+		padding: 5px;
+		vertical-align: text-top;
+		vertical-align: top;
+		/*width: 100%;*/
+	}
+
+	.caption {
+	font-weight: bold;
+}
+
+.subtext {
+	font-size: small;
+}
+
+.pageTitle {
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+.subTitle {
+	font-size: medium;
+	text-align: center;
+}
+
+.selectField {
+	font-size: medium;
+	width:20ch;
+}
+
+.textAreaField {
+	width: 50ch;
+	font-size: small;
+}
+
+.buttonDiv {
+	margin-top: 20px;
+	margin-right: 20px;
+
+	text-align: left;
+}
+
+.btnDefault, .btnCancel, .btnOther {
+  border-radius: 28px;
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  padding:  5px 20px 5px 20px;
+}
+
+.btnDefault {
+	background: blue;
+	color: white;
+ 	border: solid lightblue 2px;
+}
+
+.btnCancel {
+	background: white;
+	color: black;
+ 	border: solid blue 2px;
+}
+
+.bthOther {
+	background: #e6e6e6;
+	color: black;
+ 	border: solid black 2px;
+}
+
+.btnDefault:hover,.btnCancel:hover, .btnOther:hover {
+  background: #fcfc3c;
+  text-decoration: none;
+  color: black;
+}
+
+.btnRadio, .btnCheckbox {
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+</style>
+
+</head>
+
+<body data-kmwindow="660,690">
+<!-- data-kmwindow="660,690" -->
+<div class="pageTitle">samhtmlform</div>
+<div class="subTitle">(by sizeoverload)</div>
+<br>
+<form action="#" method="post">
+
+<table cellpadding="10" cellspacing="0" >
+	<tr>
+		<td>
+		<div class="caption">Pick Your Favorite:</div>
+		<div class="subtext">
+			Click on the button or text to select.
+		</div>
+		</td>
+
+		<td>
+			<div>
+				<label><input name="ASRadio" class="input" type="radio" value="A" checked="yes" id="radio1" />
+				<span class="btnRadio">Choice A</span></label>
+			</div>
+			<div>
+				<label><input name="ASRadio" class="input" type="radio" value="B" id="radio2" />
+				<span class="btnRadio">Choice B</span></label>
+			</div>
+			<div>
+				<label><input name="ASRadio" class="input" type="radio" value="C" id="radio3" />
+				<span class="btnRadio">Choice C</span></label>
+			</div>
+		</td>
+	</tr>
+</table>
+
+	<div class="buttonDiv">
+		<button class="btnDefault"  name="Save" type="submit"
+		title="Press RETURN to submit"
+		onclick="window.KeyboardMaestro.Submit('Save')">Save</button>
+
+		<button class="btnCancel"  name="Cancel" type="button"
+		title="Press ESC to cancel"
+		onclick="window.KeyboardMaestro.Cancel('Cancel')">Cancel</button>
+
+		<button class="btnOther" name="Resize" type="button"
+		onclick="window.KeyboardMaestro.ResizeWindow('SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),500,800')">Resize</button>
+
+	</div>
+
+</form>
+
+<!-- ============= JavaScript Functions ========================= -->
+<script>
+	function KMWindow() {
+		return "SCREEN(Main,Left,80%),SCREEN(Main,Top,80%),500, 800";	//JMU CHG 420, 700
+	}
+
+	function KMInit() {
+		document.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');
+	}
+</script>
+
+</body>
+
+</html>

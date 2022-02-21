@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>435</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Hello,
+
+I’m writing to express my interest in learning more about teaching at ???
+
+Please find my cover letter and resume attached. Feel free to contact me anytime. I look forward to hearing back from you. 
+
+Kind regards,
+Sam Englander
+
+sizeoverload@gmail.com
+6104205737
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>557597708.65574801</real>
+				<key>ModificationDate</key>
+				<real>557597741.02632201</real>
+				<key>Name</key>
+				<string>Paste edu2</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>edu2</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>124EB6DE-1AD8-421B-BB20-88E4F648229A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="en-us" http-equiv="Content-Language" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Rekordbox BeatFX displayed in the style of DJM900</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="input-knobs.js"></script>
+</head>
+<body data-kmwindow="280,800">
+<div class="beatSizeSection respTable">
+	<div class="box0"></div>
+	<div class="box1"></div>
+	<div class="box2"></div>
+</div>
+<div class="beatEffectSection">
+	<input type="range" class="input-knob" min="1" max="14" step="1" oninput="changeEventHandler(this)" value="1"/>
+</div>
+<div class="beatEffectChannelSection">
+	<input type="range" class="input-knob" min="1" max="5" step="1" value="1"/>
+</div>
+<script>
+	// Midi Arrays
+	var beatEffectArray = {
+		"1": 1, // Delay
+		"2": 7, // Echo
+		"3": null, // Ping Pong
+		"4": 13, // Spiral
+		"5": 24, // Reverb
+		"6": 45, // Trans
+		"7": 60, // Filter
+		"8": 69, // Flanger
+		"9": 75, // Phaser
+		"10": 103, // Pitch
+		"11": 80, // Slip Roll
+		"12": 86, // Roll
+		"13": null, // Vinyl Brake
+		"14": null // Helix
+	};
+
+	function KMWindow() {
+		return "SCREEN(Main,Left,80%),SCREEN(Main,Top,80%),500, 800";	//JMU CHG 420, 700
+	}
+
+	function KMInit() {
+		document.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');
+	}
+
+	function update(id) {
+		  id.innerHTML = "nothing again";
+	}
+
+	data = [
+		// Delay
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>", "<sup>3</sup>&frasl;<sub>4</sub>"], row1: ["1", "2", "4", "8"], row2: [] },
+        // Echo
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>", "<sup>3</sup>&frasl;<sub>4</sub>"], row1: ["1", "2", "4", "8"], row2: [] },
+        // Ping Pong
+		{ row0: [], row1: [], row2: [] },
+        // Spiral
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>", "<sup>3</sup>&frasl;<sub>4</sub>"], row1: ["1", "2", "4", "8"], row2: [] },
+        // Reverb
+		{ row0: [], row1: [], row2: [] },
+        // Trans
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: ["16"] },
+        // Filter
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: ["16", "32", "64"] },
+        // Flanger
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: ["16", "32", "64"] },
+        // Phaser
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: ["16", "32", "64"] },
+        // Pitch
+		{ row0: [], row1: [], row2: [] },
+        // Slip Roll
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: [] },
+        // Roll
+		{ row0: ["<sup>1</sup>&frasl;<sub>16</sub>", "<sup>1</sup>&frasl;<sub>8</sub>", "<sup>1</sup>&frasl;<sub>4</sub>", "<sup>1</sup>&frasl;<sub>2</sub>"], row1: ["1", "2", "4", "8"], row2: [] },
+        // Vinyl Brake
+		{ row0: [], row1: [], row2: [] },
+        // Helix
+		{ row0: [], row1: [], row2: [] }
+    ];
+
+	function respTable(x) {
+	    var effect = x - 1;
+	    var beatSize = 0
+
+	    var children = $(".respTable").children();
+	    for (var i = 0; i < children.length; i++) {
+	    	$(children[i]).empty();	
+	    }
+
+	    for (var i = 0; i < children.length; i++) {
+	    	var rowNum = "row" + i
+	    	for (var j = 0; j < data[effect][rowNum].length; j++) {
+	    		console.log(data[effect][rowNum][j]);
+		    	var newCol = "<div class='beatSizeItem' data-value='" + beatSize + "' onclick='beatSizeEventHandler(this)'>" + data[effect][rowNum][j] + "</div>";
+		    	beatSize = beatSize + 1;
+		    	$(children[i]).append(newCol);	    		
+	    	}
+	    }
+
+	 	// var list = document.querySelectorAll(".respTable > *")
+		// console.log(list);
+	}
+
+
+	function beatSizeEventHandler(i) {
+        $(".beatSizeItem").removeClass("active");
+        $(i).addClass("active");
+
+		var beatSize = $(i).attr("data-value")
+		console.log(beatSize)
+
+		beatSize = beatSize.toString()
+		document.getElementById('kmvar').innerHTML = beatSize;
+		window.KeyboardMaestro.Trigger( "Update Beat", beatSize );
+	
+	}
+
+	function changeEventHandler(i) {
+		var knobValue = i.value;
+		console.log(knobValue)
+		respTable(knobValue)
+		var beatEffect = (beatEffectArray[knobValue] === null) ? false : beatEffectArray[knobValue];
+		if (beatEffect == false) {
+			beatEffect = beatEffect.toString()
+			document.getElementById('kmvar').innerHTML = "No Such Effect In Rekordbox";
+		} else {
+			beatEffect = beatEffect.toString()
+			document.getElementById('kmvar').innerHTML = beatEffect;
+			window.KeyboardMaestro.Trigger( "Update Effect", beatEffect );
+		}	
+	}
+
+	$( document ).ready(function() {
+	    respTable(1);
+	});	
+</script>
+<div class="footerDiv">
+	<h3>active info:</h3>
+	<span id="kmvar" onclick="update(this)">No Effect Selected</span>	
+	
+	<!-- SAM: Must have type="button", does not Submit or Cancel. Weird! -->
+	<button class="btnDefault"  name="Cancel" type="button" title="Press ESC to cancel" onclick="window.KeyboardMaestro.Cancel('Cancel')">Cancel</button>
+	<button class="btnDefault" name="Resize" type="button" onclick="window.KeyboardMaestro.ResizeWindow('SCREEN(Main,Left,20%),SCREEN(Main,Top,20%),480,500')">Resize</button>
+	<button class="btnDefault" type="button" onclick="updateFromButton()">Update Button</button>
+</div>
+</body>
+</html>

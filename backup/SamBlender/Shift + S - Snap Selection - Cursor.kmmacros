@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>628784601.36930799</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>628784627.41051304</real>
+				<key>ModificationDate</key>
+				<real>628784838.18010104</real>
+				<key>Name</key>
+				<string>Shift + S : Snap Selection / Cursor</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>756E402F-ED52-4718-8C9B-C19820608019</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>SamBlender</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>org.blenderfoundation.blender</string>
+					<key>Name</key>
+					<string>Blender</string>
+					<key>NewFile</key>
+					<string>/Applications/Blender.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>265085E8-0AC6-4969-B1FA-33F3C5AF5998</string>
+		<key>UID</key>
+		<string>EF6499E0-E3A9-4309-A814-D1884B59A38F</string>
+	</dict>
+</array>
+</plist>

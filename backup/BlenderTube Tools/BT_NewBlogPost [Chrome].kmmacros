@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>544635181.64273298</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionName</key>
+						<string>set IsTabYoutube</string>
+						<key>ActionUID</key>
+						<integer>214</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%ChromeURL%</string>
+									<key>TextConditionType</key>
+									<string>Contains</string>
+									<key>TextValue</key>
+									<string>youtube</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>216</integer>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>false</string>
+								<key>Variable</key>
+								<string>IsTabYoutube</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>215</integer>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>true</string>
+								<key>Variable</key>
+								<string>IsTabYoutube</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>217</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>IsTabYoutube</string>
+									<key>VariableConditionType</key>
+									<string>Is</string>
+									<key>VariableValue</key>
+									<string>true</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Teal</string>
+								<key>ActionName</key>
+								<string>prepare VideoData (no youtube tab)</string>
+								<key>ActionUID</key>
+								<integer>232</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>233</integer>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>Track Height Locking in REAPER
+Published on Mar 28, 2018
+REAPER Mania
+/channel/UCq297H7Ca98HlB5mVFHGSsQ
+https://www.youtube.com/watch?v=5P04TvRSwyk 
+476.801</string>
+										<key>Variable</key>
+										<string>BlenderTubePost_VideoData</string>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Red</string>
+								<key>ActionName</key>
+								<string>get Title</string>
+								<key>ActionUID</key>
+								<integer>218</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>219</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var title = document.getElementsByClassName("title style-scope ytd-video-primary-info-renderer")
+title = title[0].innerText;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_Title</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Green</string>
+								<key>ActionName</key>
+								<string>get Date</string>
+								<key>ActionUID</key>
+								<integer>220</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>221</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var title = document.getElementsByClassName("date style-scope ytd-video-secondary-info-renderer")
+title = title[0].innerText;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_Date</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Purple</string>
+								<key>ActionName</key>
+								<string>get Creator</string>
+								<key>ActionUID</key>
+								<integer>222</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>223</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var creator = document.getElementById("owner-container");
+creator = creator.firstChild.innerText;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_Creator</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Yellow</string>
+								<key>ActionName</key>
+								<string>get CreatorChannel</string>
+								<key>ActionUID</key>
+								<integer>224</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>225</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var creator = document.getElementById("owner-container");
+creator = creator.getElementsByTagName('a');
+var channel;
+var i, len = creator.length;
+for( i = 0; i &lt; len; i++ ) {
+	if(creator[i].getAttribute('href')) {
+		channel = creator[i].getAttribute('href');
+	}
+}
+channel;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_CreatorChannel</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Red</string>
+								<key>ActionName</key>
+								<string>get Link</string>
+								<key>ActionUID</key>
+								<integer>226</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>227</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var video = document.getElementsByTagName("video");
+var i, len = video.length;
+var link;
+for( i = 0; i &lt; len; i++ ) {
+	if(video[i].baseURI) {
+		link = video[i].baseURI;
+	}
+}
+link;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_Link</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Green</string>
+								<key>ActionName</key>
+								<string>get Duration</string>
+								<key>ActionUID</key>
+								<integer>228</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>229</integer>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteJavaScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>var video = document.getElementsByTagName("video");
+var i, len = video.length;
+var duration;
+for( i = 0; i &lt; len; i++ ) {
+	if(video[i].duration) {
+		duration = video[i].duration;
+	}
+}
+duration;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>BlenderTubePost_Duration</string>
+										<key>WebBrowser</key>
+										<string>Google Chrome</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Teal</string>
+								<key>ActionName</key>
+								<string>prepare VideoData</string>
+								<key>ActionUID</key>
+								<integer>230</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionUID</key>
+										<integer>231</integer>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>%Variable%BlenderTubePost_Title%
+%Variable%BlenderTubePost_Date%
+%Variable%BlenderTubePost_Creator%
+%Variable%BlenderTubePost_CreatorChannel%
+%Variable%BlenderTubePost_Link%
+%Variable%BlenderTubePost_Duration%</string>
+										<key>Variable</key>
+										<string>BlenderTubePost_VideoData</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>234</integer>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>#!/bin/bash
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+result=`python3 "$KMVAR_MACRO_EXEC"/bt-new-blog-post.py -d "$KMVAR_BlenderTubePost_VideoData"`
+echo $result</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>BlenderTubePost_Result</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayWindow</string>
+						<key>ActionUID</key>
+						<integer>235</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5LAQAAKwAAAAEA
+						AABDAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNDA0
+						XGNvY29hc3VicnRmNDcwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO30Ke1xj
+						b2xvcnRibDtccmVkMjU1XGdyZWVu
+						MjU1XGJsdWUyNTU7XHJlZDBcZ3Jl
+						ZW4wXGJsdWUwO30KXHBhcmRcdHg1
+						NjBcdHgxMTIwXHR4MTY4MFx0eDIy
+						NDBcdHgyODAwXHR4MzM2MFx0eDM5
+						MjBcdHg0NDgwXHR4NTA0MFx0eDU2
+						MDBcdHg2MTYwXHR4NjcyMFxwYXJk
+						aXJuYXR1cmFsXHBhcnRpZ2h0ZW5m
+						YWN0b3IwCgpcZjBcZnMyNiBcY2Yy
+						ICVWYXJpYWJsZSVCbGVuZGVyVHVi
+						ZVBvc3RfUmVzdWx0JX0BAAAAIwAA
+						AAEAAAAHAAAAVFhULnJ0ZhAAAABz
+						gexatgEAAAAAAAAAAAAA
+						</data>
+						<key>Text</key>
+						<string>%Variable%BlenderTubePost_Result%</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>236</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%Variable%BlenderTubePost_Result%</string>
+									<key>TextConditionType</key>
+									<string>Contains</string>
+									<key>TextValue</key>
+									<string>creating</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>DisplayBriefly</string>
+								<key>ActionUID</key>
+								<integer>237</integer>
+								<key>MacroActionType</key>
+								<string>InsertText</string>
+								<key>Text</key>
+								<string>creating new file.</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseString</string>
+								<key>ActionUID</key>
+								<integer>238</integer>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>creating file... </string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>BlenderTubePost_Result</string>
+								<key>Which</key>
+								<string>All</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>239</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%Variable%BlenderTubePost_Result%</string>
+									<key>TextConditionType</key>
+									<string>Contains</string>
+									<key>TextValue</key>
+									<string>existing</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>DisplayBriefly</string>
+								<key>ActionUID</key>
+								<integer>240</integer>
+								<key>MacroActionType</key>
+								<string>InsertText</string>
+								<key>Text</key>
+								<string>file already exists.</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseString</string>
+								<key>ActionUID</key>
+								<integer>241</integer>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>existing file... </string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>BlenderTubePost_Result</string>
+								<key>Which</key>
+								<string>All</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>242</integer>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>(function () {
+    'use strict';
+	// --- SET KME APP VARIABLE NEEDED TO GET/SET KM VARIABLES ---
+	var kme = Application("Keyboard Maestro Engine");
+	//--- GET A KM VARIABLE --- 
+	//    Returns empty string if it doesn't exist
+  	var newPath = kme.getvariable("BlenderTubePost_Result") || 'Default';
+
+    var a = Application.currentApplication(),
+        sa = (a.includeStandardAdditions = true, a),
+        fi = Application('Finder');
+
+	var strPath = $(newPath).stringByStandardizingPath.js
+
+    fi.activate();
+    fi.reveal(Path(strPath));
+
+    // OR e.g.
+    //fi.reveal(sa.pathTo('downloads folder'));
+
+})();</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>544635210.33036602</real>
+				<key>ModificationDate</key>
+				<real>664119872.83137798</real>
+				<key>Name</key>
+				<string>BT_NewBlogPost [Chrome]</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>5A50FF4C-B7BD-4756-9268-99BCDF3AA99D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>BlenderTube Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>0038F7E4-BAFD-4BA5-80B6-A1A501C03761</string>
+		<key>UID</key>
+		<string>A210706B-1713-4311-8477-0A2E279104AA</string>
+	</dict>
+</array>
+</plist>

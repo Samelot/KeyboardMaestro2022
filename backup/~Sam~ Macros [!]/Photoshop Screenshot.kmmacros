@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>666378490.07102001</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>434</integer>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string>~/Library/Application Support/Keyboard Maestro/sam_maestro/macro_exec/screescn_increment.sh</string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>echo "$PATH"
+screencapture "$HOME/Desktop/fuc.png"</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<false/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>535645591.46272498</real>
+				<key>ModificationDate</key>
+				<real>666378274.49467194</real>
+				<key>Name</key>
+				<string>Photoshop Screenshot</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>0382CE33-BCD5-4312-9137-89342E1BEA9D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros [!]</string>
+		<key>ToggleMacroUID</key>
+		<string>A16270F5-4CC9-457B-8A35-C96E2EA1C702</string>
+		<key>UID</key>
+		<string>8AA43C87-AD18-4FA7-9782-F8AE7804C601</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>478</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Hello, I'm a artist and programmer living in Brooklyn. A new passion of mine is in education, and after having taught at a summer-camps at NYU, Pixel Academy, and even some substituting at Cottonwood schools, I am confident in my abilities to lead students in a programming environment.
+
+I’m eager to find a great group of people to join in improving the education for younger students. I spend a lot of time staying ahead in this techno-centric era, and would be an excellent mentor to any student interested in gaining insight into game development.
+
+I’d love a chance to talk more.
+
+Best regards,
+Sam Englander
+
+sizeoverload@gmail.com
+610-420-5737</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>535302362.99542803</real>
+				<key>ModificationDate</key>
+				<real>557597699.73797095</real>
+				<key>Name</key>
+				<string>Paste edu1</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>edu1</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>CF03E640-DA94-41BB-9C73-1524660E58CA</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>544635181.64273298</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionName</key>
+						<string>Test BrowserURL</string>
+						<key>ActionUID</key>
+						<integer>248</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%FrontBrowserURL%</string>
+									<key>TextConditionType</key>
+									<string>Contains</string>
+									<key>TextValue</key>
+									<string>youtube</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>249</integer>
+								<key>MacroActionType</key>
+								<string>Alert</string>
+								<key>SoundPath</key>
+								<string></string>
+								<key>Text</key>
+								<string>%FrontBrowserURL%</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>Keyboard Maestro Alert</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>631472195.458588</real>
+				<key>ModificationDate</key>
+				<real>631472436.20142198</real>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>9AD6DB69-7B0E-4E96-B196-7147C60E75F8</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>BlenderTube Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>0038F7E4-BAFD-4BA5-80B6-A1A501C03761</string>
+		<key>UID</key>
+		<string>A210706B-1713-4311-8477-0A2E279104AA</string>
+	</dict>
+</array>
+</plist>

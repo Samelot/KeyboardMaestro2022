@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>559136570.09789395</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>291</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>View</string>
+							<string>Device Slots</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.ableton.live</string>
+							<key>Name</key>
+							<string>Ableton Live 10 Suite</string>
+							<key>NewFile</key>
+							<string>/Applications/Ableton Live 10 Suite.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>559136692.77357805</real>
+				<key>ModificationDate</key>
+				<real>559136729.73194003</real>
+				<key>Name</key>
+				<string>Devices</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>2</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>5839A86E-F389-4466-ADFF-A5B2C1BBEFFE</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>SamAbleton</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.ableton.live</string>
+					<key>Name</key>
+					<string>Ableton Live 10 Suite</string>
+					<key>NewFile</key>
+					<string>/Applications/Ableton Live 10 Suite.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>D15CC079-8103-4942-9910-EB9249E77EE6</string>
+		<key>UID</key>
+		<string>B4348F0A-2CC4-49EB-93BD-3F274B157220</string>
+	</dict>
+</array>
+</plist>

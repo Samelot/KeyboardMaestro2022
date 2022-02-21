@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>548430269.59236705</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>640</integer>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Select Orphans</string>
+							<string>Both Sides</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.ScooterSoftware.BeyondCompare</string>
+							<key>Name</key>
+							<string>Beyond Compare</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>548431776.98942494</real>
+				<key>ModificationDate</key>
+				<real>548432284.16749597</real>
+				<key>Name</key>
+				<string>Select Orphans</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>51BF7B44-96E5-4529-8EE2-D258EF614488</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ZZZ SamBeyondCompare</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.ScooterSoftware.BeyondCompare</string>
+					<key>Name</key>
+					<string>Beyond Compare</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>7C100AAC-EDEC-4405-B485-7D9A25FA9455</string>
+		<key>UID</key>
+		<string>EAA5F680-6F65-490E-AD19-96923042DCE1</string>
+	</dict>
+</array>
+</plist>

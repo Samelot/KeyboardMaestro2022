@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>527692646.499219</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>379</integer>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%SystemClipboard%</string>
+						<key>Variable</key>
+						<string>ytvid</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>ActionUID</key>
+						<integer>380</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>youtube-dl -f 'bestvideo[height&lt;=1080]+bestaudio/best[height&lt;=1080]' --no-check-certificate --merge-output-format mp4</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>381</integer>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>Text</key>
+						<string>%Variable%ytvid%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>577488947.62259698</real>
+				<key>ModificationDate</key>
+				<real>577489472.80842805</real>
+				<key>Name</key>
+				<string>Paste youtube-dl 1080</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>ytdl1</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>50C55A49-9DAD-4D17-A667-240589096C64</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>~Sam~ Macros</string>
+		<key>ToggleMacroUID</key>
+		<string>12CAEEAA-BD2F-4849-B71F-408C3E97FA48</string>
+		<key>UID</key>
+		<string>C517314C-3D8E-4DAF-AEC2-03EFB04BD4F1</string>
+	</dict>
+</array>
+</plist>

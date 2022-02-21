@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>509610467.10374999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>Uppercase</string>
+						<key>ActionUID</key>
+						<integer>110</integer>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>TriggerClipboard</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>454303907.66604501</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>512365402.83356899</real>
+				<key>Name</key>
+				<string>Uppercase</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>ClipboardFilter</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>835C5117-6331-460C-85E9-59E6C900E736</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Clipboard Filters</string>
+		<key>Theme</key>
+		<dict>
+			<key>UseDefaultInstead</key>
+			<false/>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>A738966C-BF2F-44D2-B87D-C1CBE99A8D2B</string>
+		<key>UID</key>
+		<string>52710DBC-9117-4AAC-B910-59C016C4BDEA</string>
+	</dict>
+</array>
+</plist>
